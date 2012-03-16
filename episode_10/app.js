@@ -34,4 +34,11 @@ app.get('/products', function(req, res){
   }});
 });
 
+app.get('/products/:id', function(req, res){
+  var product = products.find(req.params.id);
+  res.render('products/show', {locals: {
+    product: product
+  }});
+});
+
 app.listen(4000);

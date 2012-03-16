@@ -1,12 +1,5 @@
-p Showing #{product.name}
+h2= product.name
 p= product.description
-- if (product.photo)
-  p
-    img(src=product.photo)
 p Price: #{product.price}
-p Descritption: #{product.description}
-a
-  a(href='/products/') Back
 p
-a
-  a(href='/products/'+product._id.toHexString+'/edit/') Edit
+  a(href='/products') Back
