@@ -1,0 +1,5 @@
+- if (everyauth.loggedIn)
+  p Hello #{everyauth.twitter.user.name}
+  img(src='#{everyauth.twitter.user.profile_image_url_https}')
+- else
+  a(href="/auth/twitter") log in with twitter

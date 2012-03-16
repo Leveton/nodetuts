@@ -1,0 +1,17 @@
+{
+  "name": "nodeapps-dnode",
+  "scripts": {
+    "start": "./bin/server"
+  },
+  "version": "0.1.0",
+  "dependencies": {
+    "socket.io": "v0.8.x",
+    "express": "v2.5.0",
+    "dnode": "v0.8.x"
+  },
+  "analyze": false,
+  "subdomain": "twuora",
+  "engines": {
+    "node": "v0.6.x"
+  }
+}
