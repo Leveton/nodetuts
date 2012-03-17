@@ -1,0 +1,330 @@
+info it worked if it ends with ok
+verbose cli [ 'node',
+verbose cli   '/home/ghilly/.nvm/v0.6.9/bin/npm',
+verbose cli   'install',
+verbose cli   'fugue',
+verbose cli   '-g' ]
+info using npm@1.1.0-3
+info using node@v0.6.9
+verbose config file /home/ghilly/.npmrc
+verbose config file /home/ghilly/.nvm/v0.6.9/etc/npmrc
+verbose config file /home/ghilly/.nvm/v0.6.9/lib/node_modules/npm/npmrc
+verbose cache add [ 'fugue', null ]
+silly cache add: name, spec, args [ undefined, 'fugue', [ 'fugue', null ] ]
+verbose parsed url { pathname: 'fugue', path: 'fugue', href: 'fugue' }
+verbose addNamed [ 'fugue', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'fugue', '', false ]
+verbose raw, before any munging fugue
+verbose url resolving [ 'https://registry.npmjs.org/', './fugue' ]
+verbose url resolved https://registry.npmjs.org/fugue
+verbose etag "E2GBSZKWBBUHQ2RKE8JSFVOEY"
+http GET https://registry.npmjs.org/fugue
+http 304 https://registry.npmjs.org/fugue
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"E2GBSZKWBBUHQ2RKE8JSFVOEY"',
+silly get cb     date: 'Sat, 17 Mar 2012 21:17:06 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag fugue from cache
+silly name, range, hasData 2 [ 'fugue', '', true ]
+silly versions [ 'fugue',
+silly versions   [ '0.0.1',
+silly versions     '0.0.10',
+silly versions     '0.0.11',
+silly versions     '0.0.12',
+silly versions     '0.0.13',
+silly versions     '0.0.14',
+silly versions     '0.0.15',
+silly versions     '0.0.19',
+silly versions     '0.0.20',
+silly versions     '0.0.21',
+silly versions     '0.0.22',
+silly versions     '0.0.24',
+silly versions     '0.0.25',
+silly versions     '0.0.26',
+silly versions     '0.0.27',
+silly versions     '0.0.28',
+silly versions     '0.0.29',
+silly versions     '0.0.30',
+silly versions     '0.0.31',
+silly versions     '0.0.32',
+silly versions     '0.0.33',
+silly versions     '0.0.34',
+silly versions     '0.0.35',
+silly versions     '0.0.36',
+silly versions     '0.0.37',
+silly versions     '0.0.4',
+silly versions     '0.0.5',
+silly versions     '0.0.6',
+silly versions     '0.0.7',
+silly versions     '0.0.8',
+silly versions     '0.0.9',
+silly versions     '0.0.38',
+silly versions     '0.1.0',
+silly versions     '0.1.1',
+silly versions     '0.1.2' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8o-v83.6.6.19-linux-x64-2.6.38-13-generic',
+verbose bin dist   { shasum: 'ebb6eca6ca3cfaa5a1eba48e9cc5f1dec0b1fd58',
+verbose bin dist     tarball: 'http://registry.npmjs.org/fugue/-/fugue-0.1.2.tgz',
+verbose bin dist     bin: 
+verbose bin dist      { '0.4-sunos-5.11': 
+verbose bin dist         { shasum: '87b6a60a971cbf5eddc8aa214c979c8f86ee44f9',
+verbose bin dist           tarball: 'http://registry.npmjs.org/fugue/-/fugue-0.1.2-0.4-sunos-5.11.tgz' } } } ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/home/ghilly/.npm/fugue/0.1.2/package/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+WARN fugue@0.1.2 package.json: bugs['web'] should probably be bugs['url']
+verbose caching /home/ghilly/.npm/fugue/0.1.2/package/package.json
+verbose loadDefaults fugue@0.1.2
+silly resolved [ { name: 'fugue',
+silly resolved     description: 'Unicorn for node',
+silly resolved     version: '0.1.2',
+silly resolved     homepage: 'http://www.metaduck.com/fugue',
+silly resolved     author: 
+silly resolved      { name: 'Pedro Teixeira',
+silly resolved        email: 'pedro.teixeira@gmail.com',
+silly resolved        url: 'http://www.metaduck.com' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Pedro Teixeira', email: 'pedro.teixeira@gmail.com' },
+silly resolved        { name: 'Luis Reis' } ],
+silly resolved     repository: { type: 'git', url: 'git://github.com/pgte/fugue.git' },
+silly resolved     bugs: 
+silly resolved      { email: 'pedro.teixeira@gmail.com',
+silly resolved        url: 'http://github.com/pgte/fugue/issues' },
+silly resolved     directories: { lib: './lib' },
+silly resolved     engines: { node: '>=0.3.2' },
+silly resolved     main: './lib/fugue.js',
+silly resolved     scripts: { install: 'node-waf configure build' },
+silly resolved     dependencies: { carrier: '>=0.0.4' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://github.com/pgte/fugue/raw/master/LICENSE' } ],
+silly resolved     _id: 'fugue@0.1.2',
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.0-3',
+silly resolved     _nodeVersion: 'v0.6.9',
+silly resolved     _defaultsLoaded: true } ]
+info into /home/ghilly/.nvm/v0.6.9/lib fugue@0.1.2
+info installOne fugue@0.1.2
+info unbuild /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue
+verbose from cache /home/ghilly/.npm/fugue/0.1.2/package/package.json
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm'
+verbose mkdir done: /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar undefined
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/.npmignore
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/TODO
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/Makefile
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/wscript
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/LICENSE
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/package.json
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/README.markdown
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/ChangeLog
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/test_app_reload.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/test_working_dir.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/test_if_i_can_reach_many_workers.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/ddd.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/test_one_worker.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/test_zero_workers.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/test_worker_dies_after_master_sudden_death.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/test_setuid.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/test_leaks.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/test_unix_socket.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/test_logfile.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/test_pipe_leaks.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/test_master_socket_is_protected.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/test_should_fail.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/test/daemonize.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/tools
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/tools/one_test.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/tools/test.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/examples
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/examples/test_app.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/deps
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/deps/daemon.cc
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/lib
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package/lib/fugue.js
+verbose gunzed /home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package
+verbose rm'ed /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue
+verbose renamed [ '/home/ghilly/.nvm/v0.6.9/lib/node_modules/___fugue.npm/package',
+verbose renamed   '/home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue' ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+verbose caching /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/package.json
+verbose loadDefaults fugue@0.1.2
+info preinstall fugue@0.1.2
+verbose from cache /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/package.json
+verbose cache add [ 'carrier@>=0.0.4', null ]
+silly cache add: name, spec, args [ undefined, 'carrier@>=0.0.4', [ 'carrier@>=0.0.4', null ] ]
+verbose parsed url { pathname: 'carrier@', path: 'carrier@', href: 'carrier@' }
+silly cache add: name, spec, args [ 'carrier', '>=0.0.4', [ 'carrier', '>=0.0.4' ] ]
+verbose parsed url { pathname: '=0.0.4', path: '=0.0.4', href: '=0.0.4' }
+verbose addNamed [ 'carrier', '>=0.0.4' ]
+verbose addNamed [ null, '>=0.0.4' ]
+silly name, range, hasData [ 'carrier', '>=0.0.4', false ]
+verbose raw, before any munging carrier
+verbose url resolving [ 'https://registry.npmjs.org/', './carrier' ]
+verbose url resolved https://registry.npmjs.org/carrier
+verbose etag "65GGNMJ59FMHRKN00CKZRW505"
+http GET https://registry.npmjs.org/carrier
+http 304 https://registry.npmjs.org/carrier
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"65GGNMJ59FMHRKN00CKZRW505"',
+silly get cb     date: 'Sat, 17 Mar 2012 21:17:07 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag carrier from cache
+silly name, range, hasData 2 [ 'carrier', '>=0.0.4', true ]
+silly versions [ 'carrier',
+silly versions   [ '0.0.1',
+silly versions     '0.0.2',
+silly versions     '0.0.3',
+silly versions     '0.0.4',
+silly versions     '0.1.0',
+silly versions     '0.1.1',
+silly versions     '0.1.2',
+silly versions     '0.1.3',
+silly versions     '0.1.4',
+silly versions     '0.1.5',
+silly versions     '0.1.6' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8o-v83.6.6.19-linux-x64-2.6.38-13-generic',
+verbose bin dist   { shasum: '5371dcfc42b730ed580be18acd971ae3561775b2',
+verbose bin dist     tarball: 'http://registry.npmjs.org/carrier/-/carrier-0.1.6.tgz' } ]
+verbose caching /home/ghilly/.npm/carrier/0.1.6/package/package.json
+verbose loadDefaults carrier@0.1.6
+silly resolved [ { name: 'carrier',
+silly resolved     description: 'Evented stream line reader for node.js',
+silly resolved     version: '0.1.6',
+silly resolved     homepage: 'http://github.com/pgte/carrier',
+silly resolved     author: { name: 'Pedro Teixeira', email: 'pedro.teixeira@gmail.com' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Pedro Teixeira', email: 'pedro.teixeira@gmail.com' },
+silly resolved        { name: 'Stéphan Kochen', email: 'stephan@kochen.nl' } ],
+silly resolved     repository: { type: 'git', url: 'git://github.com/pgte/carrier.git' },
+silly resolved     bugs: 
+silly resolved      { email: 'pedro.teixeira@gmail.com',
+silly resolved        url: 'http://github.com/pgte/carrier/issues' },
+silly resolved     directories: { lib: './lib' },
+silly resolved     engines: { node: '>=0.3.0' },
+silly resolved     devDependencies: { tap: '0.2' },
+silly resolved     scripts: { test: 'tap test/*.js' },
+silly resolved     main: './lib/carrier.js',
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://github.com/pgte/carrier/raw/master/LICENSE' } ],
+silly resolved     _id: 'carrier@0.1.6',
+silly resolved     dependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.0-3',
+silly resolved     _nodeVersion: 'v0.6.9',
+silly resolved     _defaultsLoaded: true } ]
+info into /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue carrier@0.1.6
+info installOne carrier@0.1.6
+info unbuild /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/carrier
+verbose from cache /home/ghilly/.npm/carrier/0.1.6/package/package.json
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm'
+verbose mkdir done: /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/carrier
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar undefined
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package/LICENSE
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package/package.json
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package/README.markdown
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package/.gitignore
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package/test
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package/test/test_no_br.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package/test/test_line_breaks.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package/test/test_one_line_ending_in_nl.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package/test/test_concatenation.js
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package/lib
+silly asyncMap in gTP /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package/lib/carrier.js
+verbose gunzed /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package
+verbose rm'ed /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/carrier
+verbose renamed [ '/home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/___carrier.npm/package',
+verbose renamed   '/home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/carrier' ]
+verbose caching /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/carrier/package.json
+verbose loadDefaults carrier@0.1.6
+info preinstall carrier@0.1.6
+verbose from cache /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/carrier/package.json
+silly resolved []
+verbose about to build /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/carrier
+info build /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/carrier
+verbose from cache /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules/carrier/package.json
+verbose linkStuff [ true,
+verbose linkStuff   '/home/ghilly/.nvm/v0.6.9/lib/node_modules',
+verbose linkStuff   false,
+verbose linkStuff   '/home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/node_modules' ]
+info linkStuff carrier@0.1.6
+verbose linkBins carrier@0.1.6
+verbose linkMans carrier@0.1.6
+verbose rebuildBundles carrier@0.1.6
+info install carrier@0.1.6
+info postinstall carrier@0.1.6
+verbose installOne cb carrier@0.1.6
+verbose about to build /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue
+info build /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue
+verbose from cache /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/package.json
+verbose linkStuff [ true,
+verbose linkStuff   '/home/ghilly/.nvm/v0.6.9/lib/node_modules',
+verbose linkStuff   true,
+verbose linkStuff   '/home/ghilly/.nvm/v0.6.9/lib/node_modules' ]
+info linkStuff fugue@0.1.2
+verbose linkBins fugue@0.1.2
+verbose linkMans fugue@0.1.2
+verbose rebuildBundles fugue@0.1.2
+verbose rebuildBundles [ 'carrier' ]
+info install fugue@0.1.2
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "node-waf configure build"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'node-waf configure build' ],
+silly spawning   '/home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue' ]
+info fugue@0.1.2 Failed to exec install script
+ERR! error installing fugue@0.1.2
+info unbuild /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue
+verbose from cache /home/ghilly/.nvm/v0.6.9/lib/node_modules/fugue/package.json
+info preuninstall fugue@0.1.2
+info uninstall fugue@0.1.2
+verbose unbuild fugue@0.1.2 [ true,
+verbose unbuild fugue@0.1.2   '/home/ghilly/.nvm/v0.6.9/lib/node_modules',
+verbose unbuild fugue@0.1.2   '/home/ghilly/.nvm/v0.6.9/lib/node_modules' ]
+info postuninstall fugue@0.1.2
+verbose installOne cb fugue@0.1.2
+ERR! fugue@0.1.2 install: `node-waf configure build`
+ERR! `sh "-c" "node-waf configure build"` failed with 1
+ERR! 
+ERR! Failed at the fugue@0.1.2 install script.
+ERR! This is most likely a problem with the fugue package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     node-waf configure build
+ERR! You can get their info via:
+ERR!     npm owner ls fugue
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Linux 2.6.38-13-generic
+ERR! command "node" "/home/ghilly/.nvm/v0.6.9/bin/npm" "install" "fugue" "-g"
+ERR! cwd /home/ghilly/Documents/node/nodetuts/episode_14
+ERR! node -v v0.6.9
+ERR! npm -v 1.1.0-3
+ERR! code ELIFECYCLE
+ERR! message fugue@0.1.2 install: `node-waf configure build`
+ERR! message `sh "-c" "node-waf configure build"` failed with 1
+ERR! errno {}
+verbose exit [ 1, true ]
