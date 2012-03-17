@@ -1,13 +1,11 @@
 var express = require('express');
-var formidable = require("formidable")
-app = express.createServer();
-fs = require('fs');
+var fs = require('fs');
 var MemStore = express.session.MemoryStore
 var users = require('./users');
 
-delete express.bodyParser.parse['multipart/form-data'];
+var app = express.createServer();
 
-app.configure(function(){
+app.configure(function() {
   app.use(express.logger());
   app.use(express.bodyParser());
   app.use(express.methodOverride());
@@ -18,16 +16,15 @@ app.configure(function(){
   })}))
 });
 
-app.configure('development', function(){
-  app.use(express.logger());
+app.configure('development', function () {
   app.use(express.errorHandler({
     dumpExceptions: true,
     showStack: true
   }));
 });
 
-app.configure('production', function(){
-  app.use(express.logger());
+app.configure('production', function () {
+  app.use(express.errorHandler());
 });
 
 app.set('views', __dirname + '/views');
@@ -52,12 +49,11 @@ function requiresLogin(req, res, next){
  }
 };
 
-app.get('/', function(req, res){
-  res.render('root.jade');
+app.get('/', function(req, res) {
+  res.render('root');
 });
 
 /*sessions*/
-
 
 app.get('/sessions/new', function(req, res){
   res.render('sessions/new', {locals: {
@@ -82,73 +78,88 @@ app.get('/sessions/destroy', function(req, res){
   res.redirect('/sessions/new')
 });
 
-var products = require('./products');
+/*products*/
 
-app.get('/products', requiresLogin, function(req, res){
+var products = require('./products');
+var photos   = require('./photos');
+
+app.get('/products', requiresLogin, function(req, res) {
   res.render('products/index', {locals: {
     products: products.all
   }});
 });
 
-app.get('/products/new', function(req, res){
-  res.render('products/new', {locals: {
-    product: req.body && req.body.product || products.new
-  }});
+app.get('/products/new', function(req, res) {
+  var product = req.body && req.body.product || products.new();
+  photos.list(function(err, photo_list) {
+    if (err) {
+      throw err;
+    }
+    res.render('products/new', {locals: {
+      product: product,
+      photos: photo_list
+    }});
+
+  });
 });
 
-app.post('/products', requiresLogin, function(req, res){
+app.post('/products', requiresLogin, function(req, res) {
   var id = products.insert(req.body.product);
   res.redirect('/products/' + id);
 });
 
-app.get('/products/:id', function(req, res){
+app.get('/products/:id', function(req, res) {
   var product = products.find(req.params.id);
   res.render('products/show', {locals: {
     product: product
   }});
 });
 
-app.get('/products/:id/edit', requiresLogin, function(req, res){
+app.get('/products/:id/edit', requiresLogin, function(req, res) {
   var product = products.find(req.params.id);
-  res.render('products/edit', {locals: {
-    product: product
-  }});
+  photos.list(function(err, photo_list) {
+    if (err) {
+      throw err;
+    }
+    res.render('products/edit', {locals: {
+      product: product,
+      photos: photo_list
+    }});
+    
+  });
 });
 
-app.put('/products/:id', requiresLogin, function(req, res){
+app.put('/products/:id', requiresLogin, function(req, res) {
   var id = req.params.id;
-  products.set(req.params.id, req.body.product);
-  res.redirect('/products/'+id)
+  products.set(id, req.body.product);
+  res.redirect('/products/'+id);
 });
 
-  app.get('/photos/new', function(req, res) {
-      res.render('photos/new');
-    });
-    
-  app.post('/photos', function(req, res) {
-    console.log('in /photos handler');
-    var form = new formidable.IncomingForm();
+/* Photos */
 
-    form.uploadDir = __dirname + '/static/uploads/photos/';
+app.get('/photos', function(req, res) {
+  photos.list(function(err, photo_list) {
+    res.render('photos/index', {locals: {
+      photos: photo_list
+    }})
+  });
+});
 
-    res.on('file', function(field, file) {
-           fs.rename(file.path, file.name);
-  })
-    res.on('error', function(err) {
-      console.log("an error has occured with form upload");
-      console.log(err);
-      req.resume();
-  })
-    res.on('aborted', function(err) {
-      console.log("user aborted upload");
-  })
-    res.on('end', function() {
-      console.log('-> upload done');
+app.get('/photos/new', function(req, res) {
+  res.render('photos/new');
+});
+
+app.post('/photos', function(req, res) {
+  console.log(req.files.photo);
+  var newFile =__dirname+'/static/uploads/photos/'+ req.files.photo.name;
+    fs.rename(req.files.photo.path , newFile, function (data,error) {
+    console.log(data); 
+    if(error) {
+      throw error;
+    }
   });
-    
-    form.parse(req, function() {
-      res.render('root.jade');
-  });
+    res.redirect('/photos');
+  
 });
 
 app.listen(4000);
