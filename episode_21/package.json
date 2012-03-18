@@ -1,0 +1,7 @@
+{
+  "name": "episode_21"
+  , "version": "0.0.3"
+  , "dependencies": {
+     "mongoose": ""
+  }
+}
