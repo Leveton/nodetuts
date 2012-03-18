@@ -159,7 +159,6 @@ app.post('/photos', function(req, res) {
     }
   });
     res.redirect('/photos');
-  
 });
 
 app.listen(4000);

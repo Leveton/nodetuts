@@ -1,0 +1,24 @@
+/*the 'npm bundle command is now 'npm install'.
+Also, there have been many changes to node since 0.4.
+*/
+
+{ "name": "myapp"
+, "description": "My App description"
+, "version": "0.0.1"
+, "homepage": "http://myapp.com"
+, "author": "Pedro Teixeira <pedro.teixeira@gmail.com>
+(http://metaduck.com)"
+, "contributors" :
+["Pedro Teixeira <pedro.teixeira@gmail.com>"
+]
+, "bugs" :
+{ "mail": "pedro.teixeira@gmail.com"
+}
+, "main" : "./index.js"
+, "engines" : { "node" : "~0.4.0" }
+, "dependencies" : 
+  {
+  	"alfred" : "0.5.2b2",
+  	"carrier": "0.1.0"
+  }
+}

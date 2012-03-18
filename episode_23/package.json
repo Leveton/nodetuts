@@ -1,0 +1,10 @@
+{
+  "name": "episode_23"
+  , "version": "0.0.3"
+  , "dependencies": {
+     "express": "",
+     "jade": "",
+     "mongoose": "",
+     "express-resource": ""  
+  }
+}
