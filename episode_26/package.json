@@ -1,0 +1,10 @@
+{
+  "name": "episode_26"
+  , "version": "0.0.3"
+  , "dependencies": {
+     "express": "",
+     "jade": "",
+     "everyauth": "",
+     "cradle": ""
+  }
+}

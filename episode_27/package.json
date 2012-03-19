@@ -1,0 +1,7 @@
+{
+  "name": "episode_27"
+  , "version": "0.0.3"
+  , "dependencies": {
+     "kue": ""
+  }
+}
